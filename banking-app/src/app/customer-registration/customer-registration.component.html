@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer New Acc</title>
+</head>
+
+<body>
+    <form class="body" action="Register">
+        <div class="row">
+            <div class="col text-center p-2 mb-3 bg-light">
+                <span class="fs-3">Create New Account</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="form-group">
+
+                <div class="modal-body row">
+                    <div class="col-md-6">
+                        <!-- 1st col -->
+                        <div class="row">
+                            <div class="col mt-2">
+                                <label>First Name</label>
+                                <input class="form-control" type="text" placeholder="First Name" id="firstname" required
+                                    pattern="[A-Za-z]{1,10}">
+                            </div>
+                            <div class="class mt-2">
+                                <label>Last Name</label>
+                                <input class="form-control" type="text" placeholder="Last Name" required
+                                    pattern="[A-Za-z ]{1,10}" id="lastname">
+                            </div>
+                        </div>
+
+                        <div class="mt-2">
+                            <label>Date of Birth</label>
+                            <input class="form-control" type="date" placeholder="MM/DD/YYYY" required id="DOB">
+                        </div>
+                        <div class="row">
+                            <div class="col mt-2">
+                                <label>Email</label>
+                                <input class="form-control" type="email" id="email" placeholder="Email Address"
+                                    required>
+                            </div>
+                            <div class="col mt-2">
+                                <label>Phone</label>
+                                <input class="form-control" type="tel" id="tel" placeholder="Please Enter Phone"
+                                    required pattern="[7-9][0-9]{9}">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mt-2">
+                                <label for="">Create Password</label>
+                                <input class="form-control" type="password" placeholder="Create Password" required
+                                    id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}"
+                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or 12 characters">
+                            </div>
+
+                            <div class="col mt-2">
+                                <label>Confirm Password</label>
+                                <input type="password" class="form-control" placeholder="Confirm-Password" required
+                                    id="confirmPass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}"
+                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or 12 characters">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- 2nd col -->
+                        <label class="mt-2">Address Line 1</label>
+                        <input class="form-control" type="text" id="SA1" required>
+                        <label class="mt-2">Address Line 2</label>
+                        <input class="form-control" type="text" id="SA2" required>
+
+
+                        <div class="row">
+                            <div class="col mt-2">
+                                <label>City</label>
+                                <input class="form-control" type="text" id="city" placeholder="City" required
+                                    pattern="[A-Za-z]{3,20}">
+                            </div>
+
+                            <div class="col mt-2">
+                                <label>State</label>
+                                <input class="form-control" type="text" id="state" placeholder="State" required
+                                    pattern="[A-Za-z]{3,20}">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col mt-2">
+                                <label>Zipcode</label>
+                                <input class="form-control" type="text" id="zipcode" placeholder="Postal/Zipcode"
+                                    required pattern="[0-9]{6}">
+                            </div>
+
+                            <div class="col mt-2">
+                                <label>Country</label>
+                                <input class="form-control" type="" id="country" placeholder="country" required
+                                    pattern="[A-Za-z]{3,20}">
+
+                            </div>
+                        </div>
+                        <div class="col mt-2">
+                            <label>Identity Proof</label>
+                            <input class="form-control" placeholder="PAN" required placeholder="PAN"
+                                pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" id="idp">
+                        </div>
+                    </div>
+
+                    <div class="mt-2">
+                        <label>Please specify the type of account you want to open</label>
+                        <select class="form-control" name="account" id="account" required>
+                            <option value=""></option>
+                            <option value="SavingsAcc">Savings Account</option>
+                            <option value="SalaryAcc">Salary Account</option>
+                            <option value="FixedDeposit">Fixed Deposit Account</option>
+                            <option value="CurrentaAcc">Current Account</option>
+                        </select>
+                    </div>
+                </div>
+
+                <input class="mt-3" type="checkbox" required><label>I agree to the terms of service.</label>
+
+                <div class="text-center">
+                    <button type="submit" id="btn" class="btn btn-success rounded">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>

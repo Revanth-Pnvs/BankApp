@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="card">
+      <div class="card-header">
+       Customer Login
+      </div>
+      <div class="card-body">
+        <!-- <form #loginform='ngForm' (ngSubmit)="onLogin(loginform)"> -->
+          <form action="Login">
+          <div class="form-group">
+            <label for="username">Email</label>
+            <input type="email" class="form-control" id="username" placeholder="Email-address" maxlength="20" required ngModel name="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" ngModel name="password" placeholder="Enter password" pattern="(?=.*[@#$&]).{8,}" title="Password must contain atleast   special characters [@#$&] and be at least 8 characters long" required>
+          </div>
+          
+          <!--<button type="submit" class="btn btn-primary btn-block">Submit</button>-->
+          <div class="loginbox">
+            
+            <!-- <button [disabled]="!loginform.valid" type="submit" class="btn btn-primary">Login</button> -->
+            <input type="submit" name="" value="SignIn">
+            
+        </div>  
+        </form>
+      </div>
+    </div>
+  </div>
+  

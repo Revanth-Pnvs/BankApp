@@ -1,0 +1,23 @@
+.container {
+    margin-top: 50px;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+   
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  .btn{
+    background: #109e99;
+  }
+  .ag{
+    text-align: center;
+  }
